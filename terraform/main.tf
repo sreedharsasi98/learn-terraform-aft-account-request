@@ -79,5 +79,5 @@ module "dev1" {
     group = "dev1"
   }
 
-  account_customizations_name = "dev"
+  account_customizations_name = ["dev", "Sandbox"]
 }
