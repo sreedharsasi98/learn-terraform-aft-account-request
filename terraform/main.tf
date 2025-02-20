@@ -15,7 +15,7 @@ module "prod" {
   }
 
   change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
+    change_requested_by = "customizing dev account"
     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
@@ -71,7 +71,7 @@ module "dev1" {
   }
 
   change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
+    change_requested_by = "customizing dev account"
     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
