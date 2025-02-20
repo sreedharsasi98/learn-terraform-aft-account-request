@@ -23,7 +23,8 @@ module "prod" {
     group = "prod"
   }
 
-  # account_customizations_name = "test"
+  account_customizations_name = "default_customization"
+
 }
 
 module "dev" {
@@ -51,5 +52,5 @@ module "dev" {
     group = "dev"
   }
 
-  # account_customizations_name = "test"
+  account_customizations_name = "default_customization"
 }
