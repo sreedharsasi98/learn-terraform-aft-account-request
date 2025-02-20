@@ -59,7 +59,7 @@ module "dev1" {
 
   control_tower_parameters = {
     AccountEmail              = "sreedharsasi102++++++@gmail.com"
-    AccountName               = "dev"
+    AccountName               = "dev1"
     ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "sreedharsasi102++++++@gmail.com"
     SSOUserFirstName          = "Sasidharan"
