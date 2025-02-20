@@ -81,3 +81,31 @@ module "dev1" {
 
   account_customizations_name = "Sandbox"
 }
+
+module "demo" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "sreedharsasi102+aftdemo@gmail.com"
+    AccountName               = "demo"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "sreedharsasi102+aftdemo@gmail.com"
+    SSOUserFirstName          = "sasidharan"
+    SSOUserLastName           = "A"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "customizing dev account1"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+  }
+
+  custom_fields = {
+    group = "demo"
+  }
+
+  account_customizations_name = "Sandbox"
+}
