@@ -58,10 +58,10 @@ module "dev1" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "sreedharsasi102+++++@gmail.com"
+    AccountEmail              = "sreedharsasi102++++++@gmail.com"
     AccountName               = "dev"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "sreedharsasi102+++++@gmail.com"
+    SSOUserEmail              = "sreedharsasi102++++++@gmail.com"
     SSOUserFirstName          = "Sasidharan"
     SSOUserLastName           = "S"
   }
