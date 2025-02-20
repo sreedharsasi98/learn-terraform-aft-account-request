@@ -71,7 +71,7 @@ module "dev1" {
   }
 
   change_management_parameters = {
-    change_requested_by = "customizing dev account"
+    change_requested_by = "customizing dev account1"
     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
