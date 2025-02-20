@@ -52,5 +52,5 @@ module "dev" {
     group = "dev"
   }
 
-  account_customizations_name = "default_customization"
+  account_customizations_name = "dev"
 }
