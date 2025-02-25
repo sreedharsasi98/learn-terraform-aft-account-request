@@ -133,6 +133,33 @@ module "sasi" {
   custom_fields = {
     group = "dev1"
   }
-
+  
   account_customizations_name = "dev"
+}
+module "poc" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "pocexample@email.com"
+    AccountName               = "poc"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "pocexample@email.com"
+    SSOUserFirstName          = "AFTTest"
+    SSOUserLastName           = "A"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "customizing poc account1"
+    change_reason       = "creating vpc in devaccount"
+  }
+
+  custom_fields = {
+    group = "dev1"
+  }
+  
+  account_customizations_name = "poc"
 }
