@@ -154,7 +154,7 @@ module "poc" {
 
   change_management_parameters = {
     change_requested_by = "customizing poc account1"
-    change_reason       = "creating vpc in devaccount"
+    change_reason       = "creating vpc in pocaccount"
   }
 
   custom_fields = {
