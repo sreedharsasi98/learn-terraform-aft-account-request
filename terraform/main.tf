@@ -127,7 +127,7 @@ module "sasi" {
 
   change_management_parameters = {
     change_requested_by = "customizing dev account1"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_reason       = "creating vpc in devaccount"
   }
 
   custom_fields = {
