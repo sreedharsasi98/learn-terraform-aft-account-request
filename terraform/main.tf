@@ -104,7 +104,7 @@ module "demo" {
   }
 
   custom_fields = {
-    group = "demo"
+    group = "demo1"
   }
 
   account_customizations_name = "dev"
