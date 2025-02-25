@@ -107,5 +107,5 @@ module "demo" {
     group = "demo"
   }
 
-  account_customizations_name = "Sandbox"
+  account_customizations_name = "dev"
 }
