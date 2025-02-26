@@ -163,3 +163,30 @@ module "poc" {
   
   account_customizations_name = "poc"
 }
+module "poctask" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "pocexample@email.com"
+    AccountName               = "poctask"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "poctaskexample@email.com"
+    SSOUserFirstName          = "AFTTest"
+    SSOUserLastName           = "A"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "customizing poc account1"
+    change_reason       = "creating vpc in pocaccount"
+  }
+
+  custom_fields = {
+    group = "dev1"
+  }
+  
+  account_customizations_name = "poc"
+}
