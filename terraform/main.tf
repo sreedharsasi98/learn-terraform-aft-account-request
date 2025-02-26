@@ -188,5 +188,5 @@ module "poctask" {
     group = "dev1"
   }
   
-  account_customizations_name = "poc"
+  account_customizations_name = "poctask"
 }
