@@ -167,7 +167,7 @@ module "poctask" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "pocexample@email.com"
+    AccountEmail              = "poctaskexample@email.com"
     AccountName               = "poctask"
     ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "poctaskexample@email.com"
